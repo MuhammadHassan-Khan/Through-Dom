@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+.box{
+    margin: 20px;
+    width: 300px ;
+    height: 200px;
+    border: 2px solid black;
+}
+#main{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+</style>
+<body>
+<h1>Dom</h1>
+    <button onclick="forbox()">Create Box</button>
+    <div id="main"></div>
+
+
+    <script>
+        function forbox() {
+            
+            var getmain = document.querySelector('#main')
+            console.log(getmain);   
+            var box = document.createElement('div')
+            box.setAttribute('class','box')  
+            console.log(box);
+            getmain.appendChild(box)
+        }
+
+    </script>
+</body>
+</html>
